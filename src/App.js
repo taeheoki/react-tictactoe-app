@@ -44,7 +44,7 @@ function App() {
   const handleClick = (i) => {
     const newHistory = history.slice(0, stepNumber + 1);
     const newCurrent = newHistory[newHistory.length - 1];
-    const newSquares = current.squares.slice();
+    const newSquares = newCurrent.squares.slice();
 
     if (calculateWinner(newSquares) || newSquares[i]) {
       return;
